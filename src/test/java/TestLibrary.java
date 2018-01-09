@@ -24,4 +24,15 @@ public class TestLibrary {
     public void getCapacity(){
         assertEquals(5, library.getCapacity());
     }
+
+    @Test
+    public void bookRejected(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(true, library.isFull());
+    }
 }
