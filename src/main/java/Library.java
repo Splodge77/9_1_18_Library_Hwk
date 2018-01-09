@@ -5,7 +5,7 @@ public class Library {
     ArrayList<Book> bookArrayList;
     int capacity;
 
-    public Library(){
+    public Library(int capacity){
         this.bookArrayList = new ArrayList<>();
         this.capacity = capacity;
     }
