@@ -11,6 +11,7 @@ public class Library {
     }
 
     public void addBook(Book book) {
+        if (!isFull())
         this.bookArrayList.add(book);
     }
 
@@ -20,5 +21,9 @@ public class Library {
 
     public int getCapacity() {
         return this.capacity;
+    }
+
+    public boolean isFull(){
+        return this.bookArrayList.size() >= capacity;
     }
 }
