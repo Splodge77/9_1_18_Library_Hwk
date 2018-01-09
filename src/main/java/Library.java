@@ -26,4 +26,8 @@ public class Library {
     public boolean isFull(){
         return this.bookArrayList.size() >= capacity;
     }
+
+    public Object removeBook() {
+        return this.bookArrayList.remove(0);
+    }
 }
