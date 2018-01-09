@@ -19,4 +19,9 @@ public class TestLibrary {
         library.addBook(book);
         assertEquals(1, library.getNumberOfBooks());
     }
+
+    @Test
+    public void getCapacity(){
+        assertEquals(5, library.getCapacity());
+    }
 }

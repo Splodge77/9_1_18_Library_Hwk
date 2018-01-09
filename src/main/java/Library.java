@@ -3,9 +3,11 @@ import java.util.ArrayList;
 public class Library {
 
     ArrayList<Book> bookArrayList;
+    int capacity;
 
     public Library(){
         this.bookArrayList = new ArrayList<>();
+        this.capacity = capacity;
     }
 
     public void addBook(Book book) {
@@ -14,5 +16,9 @@ public class Library {
 
     public int getNumberOfBooks() {
         return this.bookArrayList.size();
+    }
+
+    public int getCapacity() {
+        return this.capacity;
     }
 }
