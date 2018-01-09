@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Library {
 
-    private ArrayList<Book> bookArrayList;
+    ArrayList<Book> bookArrayList;
 
     public Library(){
         this.bookArrayList = new ArrayList<>();
@@ -10,5 +10,9 @@ public class Library {
 
     public void addBook(Book book) {
         this.bookArrayList.add(book);
+    }
+
+    public int getNumberOfBooks() {
+        return this.bookArrayList.size();
     }
 }
